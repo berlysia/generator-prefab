@@ -1,0 +1,11 @@
+{
+  "extends": ["@berlysia/eslint-config/auto"],
+  "env": {
+    "jest": true,
+    "node": true
+  },
+  "rules": {
+    "jest/no-empty-title": "off"
+  },
+  "plugins": ["prettier"]
+}

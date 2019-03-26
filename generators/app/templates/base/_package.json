@@ -1,0 +1,17 @@
+{
+  "name": "<%= packageName %>",
+  "version": "0.0.0",
+  "description": "<%= packageDescription %>",
+  "author": "berlysia <berlysia@gmail.com>",
+  "main": "index.js",
+  "license": "MIT",
+  "lint-staged": {
+    "*.{js,ts,jsx,tsx}": ["eslint --fix", "git add"],
+    "*.{json,md}": ["prettier --write", "git add"]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  }
+}
