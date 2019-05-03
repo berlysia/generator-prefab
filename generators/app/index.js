@@ -74,6 +74,7 @@ module.exports = class extends Generator {
       "ts-jest",
       "husky",
       "lint-staged",
+      "npm-run-all",
       "@berlysia/eslint-config",
       "@berlysia/tsconfig",
       "@types/jest",
