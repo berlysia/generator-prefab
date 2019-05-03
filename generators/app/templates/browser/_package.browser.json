@@ -3,9 +3,6 @@
     "prebuild": "del dist",
     "build": "webpack",
     "start": "webpack-dev-server --hot",
-    "typecheck": "tsc --noEmit",
-    "lint": "eslint 'src/**/*.ts'",
-    "format": "prettier --write '**/*.{ts,js,json,md}'",
-    "test": "jest"
+    "typecheck": "tsc --noEmit"
   }
 }

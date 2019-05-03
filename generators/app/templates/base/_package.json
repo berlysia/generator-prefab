@@ -9,6 +9,11 @@
     "*.{js,ts,jsx,tsx}": ["eslint --fix", "git add"],
     "*.{json,md}": ["prettier --write", "git add"]
   },
+  "scripts": {
+    "lint": "eslint '**/*.{js,ts,jsx,tsx}'",
+    "format": "prettier --write '**/*.{json,md}'",
+    "test": "jest"
+  },
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"

@@ -5,8 +5,6 @@
     "build": "babel src --extensions .ts --out-dir dist --ignore 'src/**/*.test.js'",
     "build:type": "tsc --emitDeclarationOnly",
     "prepare": "yarn build && yarn build:type",
-    "typecheck": "tsc --noEmit",
-    "lint": "eslint 'src/**/*.ts'",
-    "format": "prettier --write '**/*.{ts,js,json,md}'"
+    "typecheck": "tsc --noEmit"
   }
 }
