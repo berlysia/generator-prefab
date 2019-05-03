@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "prebuild": "del dist",
+    "build": "webpack",
+    "start": "webpack-dev-server --hot",
+    "typecheck": "tsc --noEmit"
+  }
+}

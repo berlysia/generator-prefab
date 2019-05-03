@@ -16,9 +16,10 @@ module.exports = class extends Generator {
         name: "packageDescription",
       },
       {
-        type: ["library", "browser"],
+        type: ["library", "browser", "node"],
+        message: "library|browser|node",
         name: "target",
-        default: "library",
+        default: "node",
       },
     ];
 
@@ -91,6 +92,9 @@ module.exports = class extends Generator {
         break;
       case "browser":
         devDeps.push("webpack", "webpack-cli", "webpack-dev-server", "babel-loader", "html-webpack-plugin");
+        break;
+      case "node":
+        devDeps.push("webpack", "webpack-cli", "webpack-dev-server", "babel-loader");
         break;
     }
 
