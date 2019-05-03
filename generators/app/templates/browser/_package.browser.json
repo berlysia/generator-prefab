@@ -1,8 +1,12 @@
 {
   "scripts": {
-    "prebuild": "del dist",
-    "build": "webpack",
-    "start": "webpack-dev-server --hot",
-    "typecheck": "tsc --noEmit"
+    "clean": "del dist",
+    "build:prod": "webpack --mode production",
+    "build:dev": "build -- --mode development",
+    "build": "npm-run-all -l clean build:dev",
+    "watch": "npm-run-all -l clean 'build:dev -- --watch",
+    "start": "webpack-dev-server --mode development --hot",
+    "typecheck": "tsc --noEmit",
+    "release": "npm-run-all -l -p lint typecheck test -s clean -p build:prod"
   }
 }

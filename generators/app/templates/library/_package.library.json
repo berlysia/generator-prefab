@@ -1,10 +1,9 @@
 {
   "scripts": {
-    "test": "jest",
-    "prebuild": "del dist",
-    "build": "babel src --extensions .ts --out-dir dist --ignore 'src/**/*.test.js'",
+    "clean": "del dist",
+    "build": "babel src --extensions '.ts' --out-dir dist --ignore '**/*.test.ts'",
     "build:type": "tsc --emitDeclarationOnly",
-    "prepare": "yarn build && yarn build:type",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "release": "npm-run-all -l -p lint typecheck test -s clean -p build build:type"
   }
 }
