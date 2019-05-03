@@ -1,6 +1,5 @@
-import Klass from ".";
+import { add } from ".";
 
-test("snapshot", () => {
-  const instance = new Klass();
-  expect(instance.greet()).toMatchSnapshot();
+test("add", () => {
+  expect(add(1, 2)).toBe(3);
 });
