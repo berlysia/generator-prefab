@@ -17,11 +17,11 @@
   ],
   "devDependencies": {
     "@berlysia/eslint-config": "^0.4.1",
-    "eslint": "^5.9.0",
+    "eslint": "^5.16.0",
     "husky": "^1.2.0",
-    "jest": "^24.3.1",
-    "lint-staged": "^8.1.0",
-    "prettier": "^1.15.2",
+    "jest": "^24.7.1",
+    "lint-staged": "^8.1.6",
+    "prettier": "^1.17.0",
     "yeoman-assert": "^3.1.0",
     "yeoman-test": "^1.7.0"
   },
