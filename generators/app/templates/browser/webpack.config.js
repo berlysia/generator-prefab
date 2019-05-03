@@ -6,7 +6,7 @@ module.exports = {
     app: "./src/index.ts",
   },
   resolve: {
-    extensions: [".js", ".jsx", ".json", ".ts", "tsx"],
+    extensions: [".js", ".jsx", ".json", ".ts", ".tsx"],
   },
   module: {
     rules: [
