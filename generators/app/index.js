@@ -16,10 +16,10 @@ module.exports = class extends Generator {
         name: "packageDescription",
       },
       {
-        type: ["library", "browser", "node"],
-        message: "library|browser|node",
+        type: ["library", "browser"],
+        message: "library OR browser",
         name: "target",
-        default: "node",
+        default: "library",
       },
     ];
 
