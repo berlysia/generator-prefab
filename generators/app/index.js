@@ -94,9 +94,6 @@ module.exports = class extends Generator {
       case "browser":
         devDeps.push("webpack", "webpack-cli", "webpack-dev-server", "babel-loader", "html-webpack-plugin");
         break;
-      case "node":
-        devDeps.push("webpack", "webpack-cli", "webpack-dev-server", "babel-loader");
-        break;
     }
 
     this.yarnInstall(devDeps, { dev: true });
