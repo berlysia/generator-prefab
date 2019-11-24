@@ -16,8 +16,8 @@
     "yeoman-generator"
   ],
   "devDependencies": {
-    "@berlysia/eslint-config": "1.1.0",
-    "eslint": "6.6.0",
+    "@berlysia/eslint-config": "1.2.0",
+    "eslint": "6.7.0",
     "husky": "3.1.0",
     "jest": "24.9.0",
     "lint-staged": "9.4.3",
