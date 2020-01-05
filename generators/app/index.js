@@ -16,9 +16,10 @@ module.exports = class extends Generator {
         name: "packageDescription",
       },
       {
-        type: ["library", "browser"],
-        message: "library OR browser",
+        type: "list",
+        message: "",
         name: "target",
+        choices: ["library", "browser"],
         default: "library",
       },
     ];
