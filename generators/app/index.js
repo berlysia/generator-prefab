@@ -37,8 +37,8 @@ module.exports = class extends Generator {
     this.fs.copyTpl(this.templatePath(`${this.props.target}/**`), this.destinationRoot(), template);
 
     const moves = {
+      "github/workflows/CI.yml": ".github/workflows/CI.yml",
       babelrc: ".babelrc",
-      "circleci/config.yml": ".circleci/config.yml",
       editorconfig: ".editorconfig",
       eslintignore: ".eslintignore",
       eslintrc: ".eslintrc",
