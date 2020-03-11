@@ -33,8 +33,8 @@ module.exports = class extends Generator {
       packageDescription: this.props.packageDescription,
     };
 
-    this.fs.copyTpl(this.templatePath("base/**"), this.destinationRoot(), template);
-    this.fs.copyTpl(this.templatePath(`${this.props.target}/**`), this.destinationRoot(), template);
+    this.fs.copyTpl(this.templatePath("base"), this.destinationRoot(), template);
+    this.fs.copyTpl(this.templatePath(`${this.props.target}`), this.destinationRoot(), template);
 
     const moves = {
       "github/workflows/CI.yml": ".github/workflows/CI.yml",
