@@ -13,8 +13,8 @@ describe("generator-prefab:app", () => {
 
   it("creates files", () => {
     const files = [
+      ".github/workflows/CI.yml",
       ".babelrc",
-      ".circleci/config.yml",
       ".editorconfig",
       ".eslintignore",
       ".eslintrc",
