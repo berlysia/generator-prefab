@@ -6,8 +6,8 @@
   "main": "index.js",
   "license": "MIT",
   "lint-staged": {
-    "*.{js,ts,jsx,tsx}": ["eslint --fix", "git add"],
-    "*.{json,md}": ["prettier --write", "git add"]
+    "*.{js,ts,jsx,tsx}": ["eslint --fix"],
+    "*.{json,md}": ["prettier --write"]
   },
   "scripts": {
     "lint": "eslint '**/*.{js,ts,jsx,tsx}'",
