@@ -10,7 +10,7 @@ module.exports = class extends Generator {
         name: "packageName",
         message: "",
         default: slugify(this.appname),
-        filter: name => (isScoped(name) ? name : slugify(name)),
+        filter: (name) => (isScoped(name) ? name : slugify(name)),
       },
       {
         name: "packageDescription",
