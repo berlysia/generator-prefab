@@ -19,9 +19,9 @@
     "@berlysia/eslint-config": "1.2.2",
     "eslint": "6.8.0",
     "husky": "4.2.5",
-    "jest": "25.3.0",
-    "lint-staged": "10.1.6",
-    "prettier": "2.0.4",
+    "jest": "25.4.0",
+    "lint-staged": "10.1.7",
+    "prettier": "2.0.5",
     "yeoman-assert": "3.1.1",
     "yeoman-test": "2.4.1"
   },
