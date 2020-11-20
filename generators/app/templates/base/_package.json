@@ -6,13 +6,16 @@
   "main": "index.js",
   "license": "MIT",
   "lint-staged": {
-    "*.{js,ts,jsx,tsx}": ["eslint --fix"],
+    "*.{js,ts,jsx,tsx}": ["eslint --fix", "prettier --write"],
     "*.{json,md}": ["prettier --write"]
   },
   "scripts": {
-    "lint": "eslint '**/*.{js,ts,jsx,tsx}'",
-    "lint:fix": "npm-run-all 'lint -- --fix'",
-    "format": "prettier --write '**/*.{json,md}'",
+    "lint": "run-p lint:*",
+    "lint:eslint": "eslint '**/*.{js,ts,jsx,tsx}'",
+    "lint:prettier": "prettier . --check",
+    "fix": "run-s fix:eslint fix:prettier",
+    "fix:eslint": "yarn lint:eslint --fix",
+    "fix:prettier": "yarn lint:prettier --write",
     "test": "jest"
   },
   "husky": {
