@@ -3,9 +3,5 @@
   "env": {
     "jest": true,
     "node": true
-  },
-  "rules": {
-    "jest/no-empty-title": "off"
-  },
-  "plugins": ["prettier"]
+  }
 }
