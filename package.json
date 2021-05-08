@@ -41,17 +41,17 @@
   },
   "lint-staged": {
     "*.js": [
-      "eslint --fix",
-      "git add"
+      "eslint --fix"
     ],
     "*.json": [
-      "prettier --write",
-      "git add"
+      "prettier --write"
     ]
   },
   "scripts": {
     "pretest": "eslint .",
-    "test": "jest"
+    "test": "jest",
+    "pre-commit": "lint-staged",
+    "prepare": "husky install"
   },
   "repository": "berlysia/generator-prefab",
   "license": "MIT"
